@@ -4,7 +4,7 @@ include color
 fun draw-flag(F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12) -> Image:
   
   
-  #svensk riktig dim 5/8 (her 10/16)
+  #svensk dim 5/8 (her 10/16)
   tv = overlay-xy(rectangle(50, 40, "solid", F4),50, 0, rectangle(20, 100, "solid", F5))
 
   topp= overlay-xy(tv, 70, 0, rectangle(90, 40, "solid", F4))
