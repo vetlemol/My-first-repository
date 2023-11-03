@@ -130,4 +130,4 @@ end
 #tabell som viser hvilke land og hvilken måte jeg har skrevet de på slik at man kan skrive rett inn i høyre vindu
 
 my-table
-"Skriv landet du vil se:"
+"Skriv landet du ønsker å se:"
