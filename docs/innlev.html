@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>IS-114 JavaScript Vetle Moldvær</title>
+  <style>
+    canvas {
+      border: solid;
+    }
+  </style>
+</head>
+
+<body style="background-color: darkgray;">
+
+  <h2>Vetle Moldvær sin side</h2>
+
+  <p1>Jeg heter Vetle Moldvær og er 24 år. </p1>
+  <br>
+  <p1> Jeg kommer fra Porsgrunn men har de siste årene jobbet som befal i Kirkenes </p1>
+  <br>
+<p1>Jeg har lite erfaring med koding fra før av og har brukt mye tid på å prøve å sette meg inn i  det</p1>
+<br>
+<p1>Selv om det er nytt, syns jeg der virker interessant og har lyst til å bli god på koding</p1>
+<br>
+  <canvas id="canvas" width="300" height="300"></canvas>
+  <p id="output"></p>
+  
+  <script>
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+    
+    rectangle = function(ctxl) {
+      ctxl.fillStyle = "blue";
+      ctxl.fillRect(10, 10, 150, 50);
+    }
+    rectangle(ctx)
+    
+
+    circle = function(radius, mode, color) {
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      ctx.arc(100, 150, radius, 0, Math.PI * 2, true); // Outer circle
+      if (mode == "solid") {
+        ctx.fill();
+      } else {
+        ctx.stroke();
+      }
+    }
+    circle(50, "solid", "red")
+    circle(20, "solid", "orange")
+    
+  </script>
+</body>
+
+</html>
